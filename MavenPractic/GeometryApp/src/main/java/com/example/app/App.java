@@ -4,6 +4,8 @@ import com.example.geometry.Cicrle;
 import com.example.geometry.PerimeterAndArea;
 import com.example.geometry.Rectangle;
 import com.example.geometry.Triangle;
+import com.example.geometry.threed.Cube;
+import com.example.geometry.threed.Sphere;
 import com.example.geometry.utils.GeometryUtils;
 
 public class App
@@ -28,5 +30,13 @@ public class App
             case 1 -> System.out.println("Периметр прямоугольника больше площади треугольника");
             case -1 -> System.out.println("Периметр прямоугольника меньше площади треугольника");
         }
+
+        Cube cube = new Cube(3);
+        System.out.printf("Куб: объём - %.2f, площадь поверхности - %.2f%n",
+                cube.getVolume(), cube.getSurfaceArea());
+
+        Sphere sphere = new Sphere(5);
+        System.out.printf("Сфера: объём - %.2f, площадь поверхности - %.2f%n",
+                cube.getVolume(), cube.getSurfaceArea());
     }
 }

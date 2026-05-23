@@ -12,5 +12,6 @@
     <modules>
         <module>geometry-core</module>
         <module>geometry-utils</module>
+        <module>geometry-three-d</module>
     </modules>
 </project>
