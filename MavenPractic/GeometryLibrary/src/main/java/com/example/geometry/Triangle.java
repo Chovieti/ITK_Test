@@ -9,12 +9,17 @@ public class Triangle {
         this.c = c;
     }
 
-    public double getPerimerter() {
+    public double getPerimeter() {
         return a + b + c;
     }
 
     public double getArea() {
-        double s = getPerimerter() / 2;
+        double s = getPerimeter() / 2;
         return Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Треугольник. Площадь - %.2f, периметр - %.2f%n", getArea(), getPerimeter());
     }
 }

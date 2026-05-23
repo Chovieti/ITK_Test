@@ -8,15 +8,12 @@ public class App
 {
     public static void main(String[] args) {
         Cicrle cicrle = new Cicrle(5);
-        System.out.printf("Круг: площадь = %.2f, периметр = %.2f%n",
-                cicrle.getArea(), cicrle.getPerimeter());
+        System.out.print(cicrle);
 
         Rectangle rectangle = new Rectangle(3, 7);
-        System.out.printf("Прямоугольник: площадь = %.2f, периметр = %.2f%n",
-                rectangle.getArea(), rectangle.getPerimeter());
+        System.out.print(rectangle.toString());
 
         Triangle triangle = new Triangle(3, 5, 7);
-        System.out.printf("Треугольник: площадь = %.2f, периметр = %.2f%n",
-                triangle.getArea(), triangle.getPerimerter());
+        System.out.print(triangle.toString());
     }
 }

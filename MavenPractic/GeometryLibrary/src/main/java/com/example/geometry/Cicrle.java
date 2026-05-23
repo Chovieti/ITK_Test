@@ -14,4 +14,9 @@ public class Cicrle {
     public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Круг. Площадь - %.2f, периметр - %.2f%n", getArea(), getPerimeter());
+    }
 }

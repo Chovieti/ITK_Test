@@ -16,4 +16,9 @@ public class Rectangle {
     public double getPerimeter() {
         return 2 * (width + height);
     }
+
+    @Override
+    public String toString() {
+        return String.format("Прямоугольник. Площадь - %.2f, периметр - %.2f%n", getArea(), getPerimeter());
+    }
 }
