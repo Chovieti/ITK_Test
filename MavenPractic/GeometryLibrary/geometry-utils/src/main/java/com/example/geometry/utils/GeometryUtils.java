@@ -11,4 +11,9 @@ public class GeometryUtils {
         double diff = c.getArea() - r.getArea();
         return diff < 0 ? -1 : (diff > 0 ? 1 : 0);
     }
+
+    public static int compareByPerimeter(PerimeterAndArea c, PerimeterAndArea r) {
+        double diff = c.getPerimeter() - r.getPerimeter();
+        return diff < 0 ? -1 : (diff > 0 ? 1 : 0);
+    }
 }
