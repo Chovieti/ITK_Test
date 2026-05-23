@@ -1,6 +1,6 @@
 package com.example.geometry;
 
-public class Triangle {
+public class Triangle implements PerimeterAndArea {
     private double a, b, c;
 
     public Triangle(double a, double b, double c) {
@@ -9,10 +9,12 @@ public class Triangle {
         this.c = c;
     }
 
+    @Override
     public double getPerimeter() {
         return a + b + c;
     }
 
+    @Override
     public double getArea() {
         double s = getPerimeter() / 2;
         return Math.sqrt(s * (s - a) * (s - b) * (s - c));

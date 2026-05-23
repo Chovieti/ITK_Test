@@ -1,6 +1,6 @@
 package com.example.geometry;
 
-public class Rectangle {
+public class Rectangle implements PerimeterAndArea {
     private double width;
     private double height;
 
@@ -9,10 +9,12 @@ public class Rectangle {
         this.height = height;
     }
 
+    @Override
     public double getArea() {
         return width * height;
     }
 
+    @Override
     public double getPerimeter() {
         return 2 * (width + height);
     }

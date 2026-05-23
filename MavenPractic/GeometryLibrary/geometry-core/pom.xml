@@ -1,16 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
+  <parent>
     <groupId>com.example.geometry</groupId>
     <artifactId>GeometryLibrary</artifactId>
     <version>1.1.0</version>
-    <packaging>pom</packaging>
+  </parent>
 
-    <name>GeometryLibraryParent</name>
-
-    <modules>
-        <module>geometry-core</module>
-        <module>geometry-utils</module>
-    </modules>
+  <artifactId>geometry-core</artifactId>
+  <name>GeometryCore(2D-Shapes)</name>
 </project>

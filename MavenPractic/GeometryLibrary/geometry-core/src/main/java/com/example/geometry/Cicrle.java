@@ -1,16 +1,18 @@
 package com.example.geometry;
 
-public class Cicrle {
+public class Cicrle implements PerimeterAndArea {
     private double radius;
 
     public Cicrle(double radius) {
         this.radius = radius;
     }
 
+    @Override
     public double getArea() {
         return Math.PI * radius * radius;
     }
 
+    @Override
     public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
