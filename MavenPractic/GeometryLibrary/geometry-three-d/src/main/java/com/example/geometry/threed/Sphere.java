@@ -16,4 +16,10 @@ public class Sphere implements VolumeAndSurfaceArea {
     public double getSurfaceArea() {
         return 4 * Math.PI * radius * radius;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Сфера. Объём - %.2f, площадь поверхности - %.2f%n",
+                getVolume(), getSurfaceArea());
+    }
 }

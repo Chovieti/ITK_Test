@@ -16,4 +16,10 @@ public class Cube implements VolumeAndSurfaceArea {
     public double getSurfaceArea() {
         return 6 * side * side;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Куб. Объём - %.2f, площадь поверхности - %.2f%n",
+                getVolume(), getSurfaceArea());
+    }
 }

@@ -32,11 +32,9 @@ public class App
         }
 
         Cube cube = new Cube(3);
-        System.out.printf("Куб: объём - %.2f, площадь поверхности - %.2f%n",
-                cube.getVolume(), cube.getSurfaceArea());
+        System.out.print(cube.toString());
 
         Sphere sphere = new Sphere(5);
-        System.out.printf("Сфера: объём - %.2f, площадь поверхности - %.2f%n",
-                cube.getVolume(), cube.getSurfaceArea());
+        System.out.print(sphere.toString());
     }
 }
