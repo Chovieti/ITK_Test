@@ -32,7 +32,8 @@ public class NumberGenerator {
                 new Order("Smartphone", 800.0),
                 new Order("Laptop", 1500.0),
                 new Order("Tablet", 500.0),
-                new Order("Smartphone", 900.0)
+                new Order("Smartphone", 900.0),
+                new Order("Apple", 1.0)
         );
         // Вариант с билдером неуверен насколько нужно, но вместо создания списка выше можно его использовать
 //        Stream.Builder<Order> builder = Stream.builder();
